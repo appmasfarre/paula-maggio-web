@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://paulamaggio.com.ar/sitemap.xml

@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://paulamaggio.com.ar/">
+<meta name="theme-color" content="#1C1A19">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://paulamaggio.com.ar/">
+<meta property="og:title" content="Paula Maggio · Comunicación &amp; eventos">
+<meta property="og:description" content="Organización de eventos, gestión de redes sociales, creación de contenido y cobertura de eventos en Reconquista, Santa Fe.">
+<meta property="og:image" content="https://paulamaggio.com.ar/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/ivy-presto-headline-light.otf" as="font" type="font/otf" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Paula Maggio Comunicación","description":"Comunicación y eventos: organización de eventos, gestión de redes sociales, creación de contenido y cobertura de eventos.","url":"https://paulamaggio.com.ar/","image":"https://paulamaggio.com.ar/img/og.jpg","telephone":"+5493482746273","address":{"@type":"PostalAddress","addressLocality":"Reconquista","addressRegion":"Santa Fe","addressCountry":"AR"},"sameAs":["https://www.instagram.com/paula.comunicacion/"]}</script>
+<title>Paula Maggio · Comunicación &amp; eventos</title>
+<meta name="description" content="Paula Maggio, comunicación & eventos. Organización de eventos, gestión de redes sociales, creación de contenido y cobertura de eventos en Reconquista, Santa Fe.">
+<link rel="icon" type="image/png" href="img/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap">
+<style>
+@font-face{font-family:"Ivy Presto";src:url("fonts/ivy-presto-headline-light.otf") format("opentype");font-weight:300;font-display:swap}
+@font-face{font-family:"Ivy Presto";src:url("fonts/ivy-presto-headline-regular.otf") format("opentype");font-weight:400;font-display:swap}
+
+/* Layout: bandas alternadas negro/arena del manual de marca, marcos en arco (los "puentes" del isotipo), una sola banda bordó para el cierre. */
+:root{
+  --ink:#1C1A19;        /* negro cálido */
+  --earth:#605649;      /* terroso */
+  --stone:#A59B8E;      /* piedra */
+  --sand:#E3DFD6;       /* arena */
+  --lila:#AA698B;       /* rosado / lila */
+  --bordo:#6D1B46;      /* bordó */
+  --naranja:#EA8642;    /* acento naranja, uso mínimo */
+  --serif:"Ivy Presto","Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Neue Montreal","Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(16px, env(safe-area-inset-right, 0px));
+  --wrap:1240px;
+  --s-xs:.8125rem; --s-sm:.9375rem; --s-md:1.0625rem; --s-lg:1.375rem;
+  --d-md:clamp(2.2rem,4.6vw,3.6rem); --d-lg:clamp(3rem,8.4vw,7.4rem); --d-xl:clamp(4rem,15vw,15rem);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ink);color:var(--sand);font-family:var(--sans);font-size:var(--s-md);line-height:1.6;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lila);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:var(--gutter);padding-right:var(--gutter-r)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.02;letter-spacing:-.01em;margin:0;text-wrap:balance}
+p{margin:0}
+.eyebrow{font-size:var(--s-xs);text-transform:uppercase;letter-spacing:.22em;font-weight:500}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.5em;border-radius:999px;font:500 var(--s-sm)/1 var(--sans);letter-spacing:.02em;text-decoration:none;border:1px solid currentColor;transition:background-color .25s,color .25s,border-color .25s}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+.btn-solid{background:var(--sand);color:var(--ink);border-color:var(--sand)}
+.btn-solid:hover{background:var(--lila);border-color:var(--lila);color:var(--ink)}
+.btn-ghost{color:var(--sand)}
+.btn-ghost:hover{background:var(--sand);color:var(--ink)}
+.btn-dark{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+.btn-dark:hover{background:var(--bordo);border-color:var(--bordo)}
+
+/* Header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--sand) 10%,transparent)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:14px}
+.brand img{height:34px;width:auto}
+.nav{display:flex;align-items:center;gap:28px;font-size:var(--s-sm)}
+.nav a{text-decoration:none;opacity:.8;transition:opacity .2s}
+.nav a:hover{opacity:1}
+.nav .btn{opacity:1;padding:.7em 1.2em}
+.menu-btn{display:none;background:none;border:1px solid color-mix(in srgb,var(--sand) 35%,transparent);color:var(--sand);border-radius:999px;padding:.55em 1em;font:500 var(--s-xs)/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(48px,8vw,96px) 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,88px);align-items:end}
+.hero-copy{display:flex;flex-direction:column;gap:28px;padding-bottom:clamp(24px,5vw,72px);min-width:0}
+.hero .eyebrow{color:var(--lila)}
+.hero h1{font-size:var(--d-lg);line-height:.92}
+.hero h1 em{font-style:normal;color:var(--stone);display:block;font-size:.5em;line-height:1.1;margin-top:.25em;letter-spacing:0}
+.hero p.lead{font-size:var(--s-lg);line-height:1.5;max-width:34ch;color:color-mix(in srgb,var(--sand) 86%,var(--ink))}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;background:var(--earth);aspect-ratio:3/4.1;max-width:100%}
+.arch img{width:100%;height:100%;object-fit:cover}
+.hero-photo{position:relative;justify-self:end;width:min(100%,460px)}
+.hero-photo .arch{aspect-ratio:3/4}
+.hero-photo .badge{position:absolute;left:-34px;bottom:52px;width:112px;height:112px;border-radius:50%;background:var(--sand);display:grid;place-items:center;box-shadow:0 18px 40px rgb(0 0 0 / .35)}
+.hero-photo .badge img{width:60%}
+.hero-photo .badge .ring{position:absolute;inset:0;animation:spin 28s linear infinite}
+.hero-photo .badge text{font:500 9.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;fill:var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tagline-giant{font-family:var(--serif);font-weight:300;font-size:var(--d-xl);line-height:.78;letter-spacing:-.03em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px color-mix(in srgb,var(--sand) 38%,transparent);margin-top:clamp(24px,4vw,48px);transform:translateY(.12em);user-select:none;padding-left:var(--gutter)}
+
+/* Banda de conceptos */
+.ticker{background:var(--sand);color:var(--ink);overflow:hidden;border-block:1px solid var(--stone)}
+.ticker-track{display:flex;width:max-content;animation:ticker 48s linear infinite}
+.ticker-track span{display:inline-flex;align-items:center;gap:28px;padding:16px 14px;font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.75rem);white-space:nowrap}
+.ticker-track img{width:20px;height:20px}
+@keyframes ticker{to{transform:translateX(-50%)}}
+
+/* Sobre Paula */
+.about{background:var(--sand);color:var(--ink);padding-block:clamp(72px,10vw,140px)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,110px);align-items:center}
+.about-photos{position:relative;padding-bottom:70px;max-width:520px}
+.about-photos .arch{aspect-ratio:3/4.2;width:78%}
+.about-photos .inset{position:absolute;right:0;bottom:0;width:44%;border:8px solid var(--sand);aspect-ratio:3/4;overflow:hidden}
+.about-photos .inset img{width:100%;height:100%;object-fit:cover}
+.about-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.about-copy .eyebrow{color:var(--bordo)}
+.about-copy h2{font-size:var(--d-lg)}
+.about-copy p{max-width:58ch;color:var(--earth)}
+.about-copy .quote{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.25;color:var(--ink);border-left:2px solid var(--bordo);padding-left:22px;max-width:30ch}
+.rubros{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.rubros li{border:1px solid var(--stone);border-radius:999px;padding:.45em 1em;font-size:var(--s-sm);color:var(--ink)}
+.rubros-label{font-size:var(--s-xs);text-transform:uppercase;letter-spacing:.2em;color:var(--earth);font-weight:500}
+
+/* Servicios */
+.services{padding-block:clamp(72px,10vw,140px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(40px,6vw,72px)}
+.sec-head h2{font-size:var(--d-lg)}
+.sec-head p{max-width:40ch;color:var(--stone)}
+.services .eyebrow{color:var(--lila);margin-bottom:18px;display:block}
+.svc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid color-mix(in srgb,var(--sand) 18%,transparent)}
+.svc{display:grid;grid-template-columns:auto 1fr;gap:12px 28px;padding:clamp(28px,4vw,48px) clamp(0px,3vw,40px) clamp(28px,4vw,48px) 0;border-bottom:1px solid color-mix(in srgb,var(--sand) 18%,transparent);transition:background-color .3s}
+.svc:nth-child(odd){border-right:1px solid color-mix(in srgb,var(--sand) 18%,transparent)}
+.svc:nth-child(even){padding-left:clamp(20px,3vw,40px)}
+.svc-icon{width:76px;height:76px;border-radius:50%;background:var(--sand);display:grid;place-items:center;grid-row:span 3;transition:transform .4s cubic-bezier(.2,.8,.2,1),background-color .3s}
+.svc-icon img{width:56%}
+.svc:hover .svc-icon{transform:rotate(-8deg) scale(1.05);background:var(--lila)}
+.svc h3{font-size:clamp(1.7rem,2.6vw,2.3rem)}
+.svc p{color:color-mix(in srgb,var(--sand) 75%,var(--ink));max-width:44ch}
+.svc .btn{justify-self:start;margin-top:8px;padding:.75em 1.2em}
+
+/* Galería */
+.work{background:var(--sand);color:var(--ink);padding-block:clamp(72px,10vw,140px)}
+.work .sec-head p{color:var(--earth)}
+.work .eyebrow{color:var(--bordo);margin-bottom:18px;display:block}
+.gallery{columns:3 280px;column-gap:14px}
+.gallery button{all:unset;display:block;margin-bottom:14px;break-inside:avoid;cursor:zoom-in;position:relative;overflow:hidden;background:var(--stone);width:100%}
+.gallery button:focus-visible{outline:2px solid var(--bordo);outline-offset:3px}
+.gallery img{width:100%;height:auto;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .4s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery button:nth-child(5n+2){border-radius:999px 999px 0 0}
+.gallery-more{display:flex;justify-content:center;margin-top:28px}
+.gallery.collapsed button:nth-child(n+13){display:none}
+
+.lightbox{position:fixed;inset:0;z-index:100;background:rgb(20 18 17 / .95);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lightbox img{max-height:86vh;max-width:100%;margin:auto;object-fit:contain}
+.lightbox button{background:none;border:1px solid color-mix(in srgb,var(--sand) 40%,transparent);color:var(--sand);width:48px;height:48px;border-radius:50%;cursor:pointer;font-size:20px;display:grid;place-items:center}
+.lightbox button:hover{background:var(--sand);color:var(--ink)}
+.lightbox .close{position:absolute;top:max(16px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px))}
+.lightbox .count{position:absolute;bottom:max(18px,env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);font-size:var(--s-xs);letter-spacing:.2em;color:var(--stone);font-variant-numeric:tabular-nums}
+
+/* Contacto */
+.contact{background:var(--bordo);color:var(--sand);position:relative;overflow:hidden;padding-block:clamp(80px,11vw,150px)}
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(32px,6vw,80px);align-items:center;position:relative;z-index:1}
+.contact h2{font-size:var(--d-lg)}
+.contact p{font-size:var(--s-lg);max-width:36ch;margin-top:20px;color:color-mix(in srgb,var(--sand) 88%,var(--bordo))}
+.contact .cta-row{margin-top:36px}
+.contact .arch{aspect-ratio:3/3.6;max-width:380px;justify-self:end;width:100%}
+.contact-mark{position:absolute;right:-6%;top:-12%;width:min(70vw,780px);opacity:.07;pointer-events:none}
+
+/* Footer */
+.site-footer{padding-block:56px calc(40px + env(safe-area-inset-bottom,0px));font-size:var(--s-sm)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;align-items:start}
+.footer-grid img{height:56px;width:auto}
+.footer-grid h4{margin:0 0 12px;font:500 var(--s-xs)/1 var(--sans);text-transform:uppercase;letter-spacing:.2em;color:var(--stone)}
+.footer-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.footer-grid a{text-decoration:none;opacity:.85}
+.footer-grid a:hover{opacity:1;color:var(--lila)}
+.footer-bottom{margin-top:48px;padding-top:20px;border-top:1px solid color-mix(in srgb,var(--sand) 12%,transparent);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--stone);font-size:var(--s-xs)}
+
+/* WhatsApp flotante */
+.wa-float{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:var(--sand);color:var(--ink);display:grid;place-items:center;box-shadow:0 12px 32px rgb(0 0 0 / .35);transition:transform .25s,background-color .25s}
+.wa-float:hover{transform:scale(1.07);background:var(--lila)}
+.wa-float svg{width:28px;height:28px}
+
+/* Entrada suave: visible por defecto, sólo se anima si hay JS y movimiento permitido */
+.js .reveal{transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.pending{transform:translateY(28px)}
+.js .reveal.pending.in{transform:none}
+.lightbox[hidden]{display:none}
+
+@media (max-width:900px){
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-photo{justify-self:center;width:min(86%,420px)}
+  .hero-photo .badge{left:-14px;width:92px;height:92px}
+  .about-photos{margin-inline:auto}
+  .contact .arch{justify-self:start;max-width:300px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-grid > :first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:18px;background:var(--ink);padding:24px var(--gutter-r) 28px var(--gutter);border-bottom:1px solid color-mix(in srgb,var(--sand) 12%,transparent);display:none}
+  .nav.open{display:flex}
+  .svc-grid{grid-template-columns:1fr}
+  .svc,.svc:nth-child(even){padding-left:0;padding-right:0;border-right:0!important}
+  .svc-icon{width:60px;height:60px;grid-row:auto}
+  .svc{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .reveal.pending{transform:none}
+}
+</style>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Paula Maggio, inicio"><img src="img/brand/logo-h-cream.png" alt="Paula Maggio" width="900" height="353"></a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a class="btn btn-ghost" href="#contacto">Hablemos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Lic. en Comunicación Social · Reconquista, Santa Fe</span>
+        <h1>Paula Maggio <em>Comunicación &amp; eventos.</em></h1>
+        <p class="lead">Acompañamos a marcas, empresas y personas a comunicar lo que hacen, conectar con sus públicos y crear experiencias que reflejen su identidad.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#servicios">Conocé nuestros servicios</a>
+          <a class="btn btn-ghost" data-wa="general" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Hablemos de tu proyecto</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="arch"><img src="img/hero.webp" alt="Paula Maggio en el escenario de un evento" width="1067" height="1600" fetchpriority="high"></div>
+        <div class="badge" aria-hidden="true">
+          <svg class="ring" viewBox="0 0 100 100"><defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text textLength="236" lengthAdjust="spacing"><textPath href="#circ" textLength="236" lengthAdjust="spacing">comunicación con sentido ✳ comunicación con sentido ✳</textPath></text></svg>
+          <img src="img/brand/isotipo-bordo.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="tagline-giant" aria-hidden="true">comunicación con sentido</div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track"><span>comunicación con sentido<img src="img/brand/ic-star-dark.png" alt=""></span><span>sobriedad<img src="img/brand/ic-star-dark.png" alt=""></span><span>calidez<img src="img/brand/ic-star-dark.png" alt=""></span><span>profesionalismo<img src="img/brand/ic-star-dark.png" alt=""></span><span>vínculo<img src="img/brand/ic-star-dark.png" alt=""></span><span>estrategia<img src="img/brand/ic-star-dark.png" alt=""></span><span>eventos<img src="img/brand/ic-star-dark.png" alt=""></span><span>puentes<img src="img/brand/ic-star-dark.png" alt=""></span><span>comunicación con sentido<img src="img/brand/ic-star-dark.png" alt=""></span><span>sobriedad<img src="img/brand/ic-star-dark.png" alt=""></span><span>calidez<img src="img/brand/ic-star-dark.png" alt=""></span><span>profesionalismo<img src="img/brand/ic-star-dark.png" alt=""></span><span>vínculo<img src="img/brand/ic-star-dark.png" alt=""></span><span>estrategia<img src="img/brand/ic-star-dark.png" alt=""></span><span>eventos<img src="img/brand/ic-star-dark.png" alt=""></span><span>puentes<img src="img/brand/ic-star-dark.png" alt=""></span></div>
+  </div>
+
+  <section class="about" id="sobre-mi">
+    <div class="wrap about-grid">
+      <div class="about-photos reveal">
+        <div class="arch"><img src="img/about.webp" alt="Paula registrando contenido con su celular durante un evento" width="1067" height="1600" loading="lazy"></div>
+        <div class="inset"><img src="img/about2.webp" alt="Paula en backstage, en blanco y negro" width="1067" height="1600" loading="lazy"></div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">Sobre mí</span>
+        <h2>Hola, soy Paula.</h2>
+        <p>Soy Licenciada en Comunicación Social y organizadora de eventos. Soy quien está detrás de esta marca personal, un espacio desde el que trabajo junto a un equipo de profesionales para acompañar proyectos, marcas y eventos.</p>
+        <p class="quote">Pensamos la comunicación como el encuentro con el otro, ese punto de convergencia entre lo que somos y lo que comunicamos.</p>
+        <p>Cada proyecto es diferente y nos gusta involucrarnos al 100% para encontrar la mejor manera de comunicarlo.</p>
+        <div>
+          <p class="rubros-label">Trabajamos con empresas, emprendedores y profesionales de</p>
+          <ul class="rubros" style="margin-top:12px">
+            <li>Técnica de eventos</li><li>Decoración</li><li>Salud</li><li>Moda</li><li>Belleza</li><li>Gastronomía</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow">Servicios</span><h2>¿Qué hacemos?</h2></div>
+        <p>Cuatro formas de acompañarte, de la estrategia al registro del momento. Escribinos por el que te interese y lo charlamos.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <div class="svc-icon"><img src="img/brand/ic-eventos-dark.png" alt=""></div>
+          <h3>Organización de eventos</h3>
+          <p>Planificamos, organizamos y acompañamos eventos sociales, empresariales y experiencias de marca.</p>
+          <a class="btn btn-ghost" data-wa="eventos" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero organizar un evento</a>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><img src="img/brand/ic-redes-dark.png" alt=""></div>
+          <h3>Gestión de redes sociales</h3>
+          <p>Desarrollamos estrategias de comunicación para marcas y empresas. Planificamos, gestionamos y acompañamos su presencia digital.</p>
+          <a class="btn btn-ghost" data-wa="redes" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero potenciar mis redes</a>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><img src="img/brand/ic-contenido-dark.png" alt=""></div>
+          <h3>Creación de contenido</h3>
+          <p>Pensamos, producimos y desarrollamos contenidos audiovisuales y gráficos que responden a los objetivos y la identidad de cada marca.</p>
+          <a class="btn btn-ghost" data-wa="contenido" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero crear contenido</a>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-icon"><img src="img/brand/ic-cobertura-dark.png" alt=""></div>
+          <h3>Cobertura de eventos</h3>
+          <p>Registramos y compartimos los momentos más importantes de eventos sociales y corporativos con contenido pensado para redes sociales.</p>
+          <a class="btn btn-ghost" data-wa="cobertura" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Quiero cubrir mi evento</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="trabajos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow">Trabajos</span><h2>Un poco de lo que hacemos</h2></div>
+        <p>Cada marca, cada proyecto y cada evento tiene su propia historia. Estos son algunos de los trabajos que nos permitieron ser parte de ellas.</p>
+      </div>
+      <div class="gallery collapsed" id="gallery"><button type="button" data-full="img/g/01.webp" aria-label="Ampliar foto: Tres conductoras en el escenario de un evento"><img src="img/g/01-s.webp" alt="Tres conductoras en el escenario de un evento" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/02.webp" aria-label="Ampliar foto: Chicas bailando con celulares en una fiesta"><img src="img/g/02-s.webp" alt="Chicas bailando con celulares en una fiesta" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/03.webp" aria-label="Ampliar foto: Paula hablando con micrófono en el escenario"><img src="img/g/03-s.webp" alt="Paula hablando con micrófono en el escenario" width="507" height="760" loading="lazy"></button><button type="button" data-full="img/g/04.webp" aria-label="Ampliar foto: Escenario con pantallas de Tu Fiesta Ideal"><img src="img/g/04-s.webp" alt="Escenario con pantallas de Tu Fiesta Ideal" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/05.webp" aria-label="Ampliar foto: Equipo frente a la pantalla de Masfarré Teens"><img src="img/g/05-s.webp" alt="Equipo frente a la pantalla de Masfarré Teens" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/06.webp" aria-label="Ampliar foto: Paula de espaldas frente al público"><img src="img/g/06-s.webp" alt="Paula de espaldas frente al público" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/07.webp" aria-label="Ampliar foto: Dos chicas posando en la fotocabina con luces violetas"><img src="img/g/07-s.webp" alt="Dos chicas posando en la fotocabina con luces violetas" width="507" height="760" loading="lazy"></button><button type="button" data-full="img/g/08.webp" aria-label="Ampliar foto: Paula caminando por un evento al aire libre"><img src="img/g/08-s.webp" alt="Paula caminando por un evento al aire libre" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/09.webp" aria-label="Ampliar foto: Paula con clientes en un evento"><img src="img/g/09-s.webp" alt="Paula con clientes en un evento" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/10.webp" aria-label="Ampliar foto: Paula y una compañera revisando contenido en backstage"><img src="img/g/10-s.webp" alt="Paula y una compañera revisando contenido en backstage" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/11.webp" aria-label="Ampliar foto: Lluvia de papelitos sobre el público de Masfarré Teens"><img src="img/g/11-s.webp" alt="Lluvia de papelitos sobre el público de Masfarré Teens" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/12.webp" aria-label="Ampliar foto: Paula hablando en el escenario frente a la pantalla"><img src="img/g/12-s.webp" alt="Paula hablando en el escenario frente a la pantalla" width="507" height="760" loading="lazy"></button><button type="button" data-full="img/g/13.webp" aria-label="Ampliar foto: Packaging de la marca Férini"><img src="img/g/13-s.webp" alt="Packaging de la marca Férini" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/14.webp" aria-label="Ampliar foto: Paula grabando contenido con una compañera"><img src="img/g/14-s.webp" alt="Paula grabando contenido con una compañera" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/15.webp" aria-label="Ampliar foto: Pantalla de Masfarré Teens durante la fiesta"><img src="img/g/15-s.webp" alt="Pantalla de Masfarré Teens durante la fiesta" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/16.webp" aria-label="Ampliar foto: Paula registrando con cámara"><img src="img/g/16-s.webp" alt="Paula registrando con cámara" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/17.webp" aria-label="Ampliar foto: Personaje animando la fiesta"><img src="img/g/17-s.webp" alt="Personaje animando la fiesta" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/18.webp" aria-label="Ampliar foto: Registro de contenido con celular en la fiesta"><img src="img/g/18-s.webp" alt="Registro de contenido con celular en la fiesta" width="507" height="760" loading="lazy"></button><button type="button" data-full="img/g/19.webp" aria-label="Ampliar foto: Pantalla de bienvenida de un evento"><img src="img/g/19-s.webp" alt="Pantalla de bienvenida de un evento" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/20.webp" aria-label="Ampliar foto: Paula caminando frente al público"><img src="img/g/20-s.webp" alt="Paula caminando frente al público" width="507" height="760" loading="lazy"></button><button type="button" data-full="img/g/21.webp" aria-label="Ampliar foto: Staff del evento en blanco y negro"><img src="img/g/21-s.webp" alt="Staff del evento en blanco y negro" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/22.webp" aria-label="Ampliar foto: Paula y su equipo sonriendo en backstage"><img src="img/g/22-s.webp" alt="Paula y su equipo sonriendo en backstage" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/23.webp" aria-label="Ampliar foto: Siluetas del público en blanco y negro"><img src="img/g/23-s.webp" alt="Siluetas del público en blanco y negro" width="760" height="507" loading="lazy"></button><button type="button" data-full="img/g/24.webp" aria-label="Ampliar foto: Escenario con pantalla sobre creación de contenido"><img src="img/g/24-s.webp" alt="Escenario con pantalla sobre creación de contenido" width="760" height="507" loading="lazy"></button></div>
+      <div class="gallery-more"><button class="btn btn-dark" id="more-btn" type="button">Ver más fotos</button></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <img class="contact-mark" src="img/brand/isotipo-cream.png" alt="" aria-hidden="true">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--sand);opacity:.75">Contacto</span>
+        <h2 style="margin-top:18px">¿Tenés un proyecto en mente?</h2>
+        <p>Nos encantaría conocerlo y pensar cómo podemos acompañarte.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" data-wa="general" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Hablemos por WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/paula.comunicacion/" target="_blank" rel="noopener">@paula.comunicacion</a>
+        </div>
+      </div>
+      <div class="arch reveal"><img src="img/contacto.webp" alt="Paula trabajando en un evento" width="1067" height="1600" loading="lazy"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="img/brand/logo-full-cream.png" alt="Paula Maggio, comunicación con sentido" width="900" height="319">
+      </div>
+      <div>
+        <h4>Paula Maggio Comunicación</h4>
+        <ul><li>Reconquista, Santa Fe · Argentina</li><li><a data-wa="general" href="#">+54 9 3482 74-6273</a></li></ul>
+      </div>
+      <div>
+        <h4>Seguinos</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/paula.comunicacion/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Paula Maggio · Comunicación con sentido.</span><span>Lic. en Comunicación Social</span></div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="general" href="#" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería de fotos">
+  <button class="prev" id="lb-prev" type="button" aria-label="Foto anterior">←</button>
+  <img id="lb-img" alt="">
+  <button class="next" id="lb-next" type="button" aria-label="Foto siguiente">→</button>
+  <button class="close" id="lb-close" type="button" aria-label="Cerrar">✕</button>
+  <span class="count" id="lb-count"></span>
+</div>
+
+<script>
+(function(){
+  var PHONE='5493482746273';
+  var MSG={
+    general:'¡Hola! Estuve viendo la web y me gustaría hablar sobre un proyecto.',
+    eventos:'¡Hola! Estuve viendo la web y me gustaría consultar por el servicio de organización de eventos.',
+    redes:'¡Hola! Estuve viendo la web y me gustaría conocer más sobre el servicio de gestión de redes sociales.',
+    contenido:'¡Hola! Estuve viendo la web y me gustaría consultar por el servicio de creación de contenido.',
+    cobertura:'¡Hola! Estuve viendo la web y me gustaría consultar por el servicio de cobertura de eventos.'
+  };
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(MSG[a.dataset.wa]||MSG.general);
+    a.target='_blank';a.rel='noopener';
+  });
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  var mb=document.getElementById('menu-btn'),nav=document.getElementById('nav');
+  mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  nav.addEventListener('click',function(e){if(e.target.closest('a')){nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
+
+  var g=document.getElementById('gallery'),more=document.getElementById('more-btn');
+  more.addEventListener('click',function(){var c=g.classList.toggle('collapsed');more.textContent=c?'Ver más fotos':'Ver menos';if(c)document.getElementById('trabajos').scrollIntoView()});
+
+  var items=[].slice.call(g.querySelectorAll('button')),lb=document.getElementById('lightbox'),img=document.getElementById('lb-img'),cnt=document.getElementById('lb-count'),cur=0,last=null;
+  function show(i){cur=(i+items.length)%items.length;var b=items[cur];img.src=b.dataset.full;img.alt=b.querySelector('img').alt;cnt.textContent=(cur+1)+' / '+items.length}
+  function open(i){last=document.activeElement;show(i);lb.hidden=false;document.body.style.overflow='hidden';document.getElementById('lb-close').focus()}
+  function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
+  items.forEach(function(b,i){b.addEventListener('click',function(){open(i)})});
+  document.getElementById('lb-prev').onclick=function(){show(cur-1)};
+  document.getElementById('lb-next').onclick=function(){show(cur+1)};
+  document.getElementById('lb-close').onclick=close;
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+  var tx=null;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(tx===null)return;var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));tx=null});
+
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=[].slice.call(document.querySelectorAll('.reveal'));
+    var vh=innerHeight;
+    els.forEach(function(el){if(el.getBoundingClientRect().top>vh)el.classList.add('pending')});
+    document.documentElement.classList.add('js');
+    els.forEach(function(el){if(!el.classList.contains('pending'))el.classList.add('in')});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){if(el.classList.contains('pending'))io.observe(el)});
+  }
+})();
+</script>
+
+</body>
+</html>
